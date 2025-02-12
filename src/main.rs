@@ -1,6 +1,9 @@
+use rand::Rng;
 use std::io;
 
 fn main() {
+    let rndNumber = rand::thread_rng().gen_range(1, 100);
+
     println!("Guess the number!");
     println!("Input your guess:");
 
